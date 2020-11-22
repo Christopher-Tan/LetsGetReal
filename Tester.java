@@ -41,5 +41,7 @@ public class Tester {
         System.out.println(rn9);
         System.out.println(new RationalNumber(102,0));
         //REDUCE
+        System.out.println(new RationalNumber(10,5));
+        System.out.println(new RationalNumber(7544,115));
     }
 }
