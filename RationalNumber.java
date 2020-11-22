@@ -28,4 +28,19 @@ public class RationalNumber extends RealNumber {
     public String toString() {
         return this.getNumerator() + "/" + this.getDenominator();
     }
+    private static int gcd(int a, int b) {
+        while (true) {
+            if (a < b) {
+                int temp = a;
+                a = b;
+                b = temp;
+            }
+            int r = a % b;
+            if (r == 0) {
+                return b;
+            }
+            a = b;
+            b = r;
+        }
+    }
 }
