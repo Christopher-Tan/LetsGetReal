@@ -22,4 +22,7 @@ public class RationalNumber extends RealNumber {
     public RationalNumber reciprocal() {
         return new RationalNumber(this.getDenominator(),this.getNumerator());
     }
+    public boolean equals(RationalNumber other) {
+        return (this.getNumerator() == other.getNumerator() && this.getDenominator() == other.getDenominator());
+    }
 }

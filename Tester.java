@@ -34,5 +34,8 @@ public class Tester {
         //RECIPROCAL
         System.out.println(rn9.reciprocal().getNumerator());
         System.out.println(rn9.reciprocal().getDenominator());
+        //EQUALS
+        System.out.println(rn9.equals(new RationalNumber(10,27)));
+        System.out.println(rn9.equals(new RationalNumber(10,26)));
     }
 }
