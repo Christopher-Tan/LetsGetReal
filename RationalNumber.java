@@ -10,4 +10,7 @@ public class RationalNumber extends RealNumber {
             denominator = 1;
         }
     }
+    public double getValue() {
+        return ((double) numerator) / ((double) denominator);
+    }
 }

@@ -25,5 +25,6 @@ public class Tester {
         System.out.println(rn7.subtract(rn8).getValue());
         //CONSTRUCTOR
         RationalNumber rn9 = new RationalNumber(10,27);
+        System.out.println(rn9.getValue());
     }
 }
