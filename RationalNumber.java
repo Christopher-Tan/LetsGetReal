@@ -5,6 +5,10 @@ public class RationalNumber extends RealNumber {
         super(0.0);
         numerator = nume;
         denominator = deno;
+        if (denominator < 0) {
+            numerator = -1 * numerator;
+            denominator = -1 * denominator;
+        }
         if (denominator == 0) {
             numerator = 0;
             denominator = 1;
@@ -31,6 +35,8 @@ public class RationalNumber extends RealNumber {
         return this.getNumerator() + "/" + this.getDenominator();
     }
     private static int gcd(int a, int b) {
+        a = Math.abs(a);
+        b = Math.abs(b);
         while (true) {
             if (a < b) {
                 int temp = a;

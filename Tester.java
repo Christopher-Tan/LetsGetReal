@@ -51,5 +51,8 @@ public class Tester {
         System.out.println(new RationalNumber(3,5).add(new RationalNumber(2,4)));
         //SUBTRACT
         System.out.println(new RationalNumber(3,5).subtract(new RationalNumber(2,4)));
+        //NEGATIVES
+        System.out.println(new RationalNumber(10,-1));
+        System.out.println(new RationalNumber(-10,-10));
     }
 }
