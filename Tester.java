@@ -43,5 +43,7 @@ public class Tester {
         //REDUCE
         System.out.println(new RationalNumber(10,5));
         System.out.println(new RationalNumber(7544,115));
+        //MULTIPLY
+        System.out.println(new RationalNumber(7544,115).multiply(new RationalNumber(10,4)));
     }
 }

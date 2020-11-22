@@ -50,4 +50,7 @@ public class RationalNumber extends RealNumber {
         numerator = numerator / gcd;
         denominator = denominator / gcd;
     }
+    public RationalNumber multiply(RationalNumber other) {
+        return new RationalNumber(this.getNumerator() * other.getNumerator(), this.getDenominator() * other.getDenominator());
+    }
 }
