@@ -40,5 +40,6 @@ public class Tester {
         //TOSTRING
         System.out.println(rn9);
         System.out.println(new RationalNumber(102,0));
+        //REDUCE
     }
 }

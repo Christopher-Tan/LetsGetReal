@@ -8,6 +8,8 @@ public class RationalNumber extends RealNumber {
         if (denominator == 0) {
             numerator = 0;
             denominator = 1;
+        } else {
+            reduce();
         }
     }
     public double getValue() {
@@ -42,5 +44,10 @@ public class RationalNumber extends RealNumber {
             a = b;
             b = r;
         }
+    }
+    private void reduce() {
+        int gcd = gcd(numerator,denominator);
+        numerator = numerator / gcd;
+        denominator = denominator / gcd;
     }
 }
