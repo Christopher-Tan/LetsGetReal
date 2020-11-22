@@ -9,5 +9,9 @@ public class Tester {
         RealNumber rn5 = new RealNumber(1.000009);
         System.out.println(rn3.equals(rn4));
         System.out.println(rn3.equals(rn5));
+        RealNumber rn6 = new RealNumber(0);
+        System.out.println(rn6.equals(new RealNumber(0.000000000000000000001)));
+        //ADD
+        System.out.println(rn4.add(rn5).getValue());
     }
 }

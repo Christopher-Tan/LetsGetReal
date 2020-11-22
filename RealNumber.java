@@ -23,4 +23,7 @@ public class RealNumber {
         }
         return false;
     }
+    public RealNumber add(RealNumber other) {
+        return new RealNumber(this.getValue() + other.getValue());
+    }
 }
