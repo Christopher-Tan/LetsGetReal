@@ -25,10 +25,14 @@ public class Tester {
         System.out.println(rn7.subtract(rn8).getValue());
         //CONSTRUCTOR
         RationalNumber rn9 = new RationalNumber(10,27);
+        //GET
         System.out.println(rn9.getValue());
         System.out.println(rn9.getNumerator());
         System.out.println(rn9.getDenominator());
         System.out.println(new RationalNumber(102, 0).getNumerator());
         System.out.println(new RationalNumber(102, 0).getDenominator());
+        //RECIPROCAL
+        System.out.println(rn9.reciprocal().getNumerator());
+        System.out.println(rn9.reciprocal().getDenominator());
     }
 }
