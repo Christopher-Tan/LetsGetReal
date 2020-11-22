@@ -3,5 +3,11 @@ public class RationalNumber extends RealNumber {
 
     public RationalNumber(int nume, int deno) {
         super(0.0);
+        numerator = nume;
+        denominator = deno;
+        if (denominator == 0) {
+            numerator = 0;
+            denominator = 1;
+        }
     }
 }

@@ -23,5 +23,7 @@ public class Tester {
         //SUBTRACT
         System.out.println(rn4.subtract(rn5).getValue());
         System.out.println(rn7.subtract(rn8).getValue());
+        //CONSTRUCTOR
+        RationalNumber rn9 = new RationalNumber(10,27);
     }
 }
