@@ -26,5 +26,9 @@ public class Tester {
         //CONSTRUCTOR
         RationalNumber rn9 = new RationalNumber(10,27);
         System.out.println(rn9.getValue());
+        System.out.println(rn9.getNumerator());
+        System.out.println(rn9.getDenominator());
+        System.out.println(new RationalNumber(102, 0).getNumerator());
+        System.out.println(new RationalNumber(102, 0).getDenominator());
     }
 }
