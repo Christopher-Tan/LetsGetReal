@@ -13,5 +13,15 @@ public class Tester {
         System.out.println(rn6.equals(new RealNumber(0.000000000000000000001)));
         //ADD
         System.out.println(rn4.add(rn5).getValue());
+        //MULTIPLY
+        System.out.println(rn4.multiply(rn5).getValue());
+        //DIVIDE
+        System.out.println(rn4.divide(rn5).getValue());
+        RealNumber rn7 = new RealNumber(10);
+        RealNumber rn8 = new RealNumber(2.5);
+        System.out.println(rn7.divide(rn8).getValue());
+        //SUBTRACT
+        System.out.println(rn4.subtract(rn5).getValue());
+        System.out.println(rn7.subtract(rn8).getValue());
     }
 }
