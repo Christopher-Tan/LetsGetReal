@@ -49,5 +49,7 @@ public class Tester {
         System.out.println(new RationalNumber(7544,115).divide(new RationalNumber(328,5)));
         //ADD
         System.out.println(new RationalNumber(3,5).add(new RationalNumber(2,4)));
+        //SUBTRACT
+        System.out.println(new RationalNumber(3,5).subtract(new RationalNumber(2,4)));
     }
 }

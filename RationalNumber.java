@@ -63,4 +63,11 @@ public class RationalNumber extends RealNumber {
         int d = other.getDenominator();
         return new RationalNumber(((a * d) + (b * c)),(b * d));
     }
+    public RationalNumber subtract(RationalNumber other) {
+        int a = this.getNumerator();
+        int b = this.getDenominator();
+        int c = other.getNumerator();
+        int d = other.getDenominator();
+        return new RationalNumber(((a * d) - (b * c)), (b * d));
+    }
 }
