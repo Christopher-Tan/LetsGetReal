@@ -9,7 +9,7 @@ public class RationalNumber extends RealNumber {
             numerator = -1 * numerator;
             denominator = -1 * denominator;
         }
-        if (denominator == 0) {
+        if (denominator == 0 || numerator == 0) {
             numerator = 0;
             denominator = 1;
         } else {
