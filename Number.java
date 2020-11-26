@@ -13,4 +13,11 @@ public abstract class Number {
         }
         return false;
     }
+    public int compareTo(Number other) {
+        if (this.equals(other)) {
+            return 0;
+        } else {
+            return this.getValue() - other.getValue();
+        }
+    }
 }
