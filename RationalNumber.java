@@ -32,6 +32,9 @@ public class RationalNumber extends RealNumber {
         return (this.getNumerator() == other.getNumerator() && this.getDenominator() == other.getDenominator());
     }
     public String toString() {
+        if (this.getDenominator() == 1) {
+            return "" + this.getNumerator();
+        }
         return this.getNumerator() + "/" + this.getDenominator();
     }
     private static int gcd(int a, int b) {
