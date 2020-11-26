@@ -16,8 +16,13 @@ public abstract class Number {
     public int compareTo(Number other) {
         if (this.equals(other)) {
             return 0;
-        } else {
-            return this.getValue() - other.getValue();
         }
+        if (this.getValue() < other.getValue()) {
+            return -1;
+        }
+        if (this.getValue() > other.getValue()) {
+            return 1;
+        }
+        return 0;
     }
 }

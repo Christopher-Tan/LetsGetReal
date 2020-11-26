@@ -55,5 +55,10 @@ public class Tester {
         //NEGATIVES
         System.out.println(new RationalNumber(10,-1));
         System.out.println(new RationalNumber(-10,-10));
+        //COMPARETO
+        RationalNumber rn10 = new RationalNumber(10,30);
+        System.out.println(rn10.compareTo(new RealNumber(0.3)));
+        System.out.println(rn10.compareTo(new RealNumber(0.4)));
+        System.out.println(rn10.compareTo(new RealNumber(0.333333)));
     }
 }
